@@ -12,6 +12,6 @@ module.exports = function(app) {
 
     //for any other non-predefined route, just serve them back the homepage
     app.get("/*", function(req,res) {
-        res.sendFile(path.join(__dirname, "./public/xenophile.html"))
+        res.sendFile(path.join(__dirname, "../public/xenophile.html"))
     });
 }
