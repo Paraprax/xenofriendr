@@ -5,7 +5,24 @@ var friendsArray = [
     {
     "name":"Nylana",
     "species":"asari",
-    "photo":"https://imgur.com/rbrmz4s",
+    "photo":"https://imgur.com/SP1wSVw",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Xendros",
+    "species":"turian",
+    "photo":"https://imgur.com/7fBQs4t",
     "scores":[
         0,
         0,
@@ -22,7 +39,7 @@ var friendsArray = [
   {
     "name":"Grudge",
     "species":"krogan",
-    "photo":"https://imgur.com/vJ1uQC3",
+    "photo":"https://imgur.com/bCrHKmx",
     "scores":[
         0,
         0,
@@ -35,7 +52,42 @@ var friendsArray = [
         0,
         0
       ]
-  }
+  },
+  {
+    "name":"Jenkins",
+    "species":"human",
+    "photo":"https://imgur.com/MMs2i6s",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Madas",
+    "species":"batarian",
+    "photo":"https://imgur.com/KccBKwu",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+
 ]
   
 module.exports = friendsArray; /* module.exports is used here to make the array 
