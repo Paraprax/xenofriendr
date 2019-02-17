@@ -1,7 +1,7 @@
 /* the routes for GET-ing the list of all existing profiles(as a JSON response)
 && POST-ing new user survey data to the database */
 
-var userSurveys = require("../data/surveyData");
+var userSurveys = require("../data/friends.js");
 
 module.exports = function(app) {
 
