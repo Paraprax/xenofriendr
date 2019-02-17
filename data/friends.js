@@ -7,16 +7,16 @@ var friendsArray = [
     "species":"asari",
     "photo":"https://imgur.com/SP1wSVw",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        5,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        4,
+        1,
+        4
       ]
   },
   {
@@ -24,16 +24,16 @@ var friendsArray = [
     "species":"turian",
     "photo":"https://imgur.com/7fBQs4t",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        4,
+        4,
+        4,
+        3,
+        4,
+        2,
+        3,
+        5,
+        3,
+        4
       ]
   },
   {
@@ -41,16 +41,16 @@ var friendsArray = [
     "species":"krogan",
     "photo":"https://imgur.com/bCrHKmx",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        5,
+        1,
+        5,
+        2,
+        5,
+        2,
+        4,
+        5,
+        4,
+        2
       ]
   },
   {
@@ -58,16 +58,16 @@ var friendsArray = [
     "species":"human",
     "photo":"https://imgur.com/MMs2i6s",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        5,
+        4,
+        1,
+        1,
+        5,
+        1,
+        3,
+        2,
+        1,
+        5
       ]
   },
   {
@@ -75,16 +75,16 @@ var friendsArray = [
     "species":"batarian",
     "photo":"https://imgur.com/KccBKwu",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        3,
+        3,
+        3,
+        2,
+        3,
+        4,
+        3,
+        4,
+        2,
+        4
       ]
   },
   {
@@ -92,16 +92,16 @@ var friendsArray = [
     "species":"volus",
     "photo":"https://imgur.com/k96bYYE",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        2,
+        3,
+        1,
+        4,
+        4,
+        5,
+        1,
+        3,
+        1,
+        5
       ]
   },
   {
@@ -109,16 +109,16 @@ var friendsArray = [
     "species":"quarian",
     "photo":"https://imgur.com/ylDMEeT",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        4,
+        1,
+        2,
+        4,
+        5,
+        2,
+        4,
+        2,
+        3,
+        3
       ]
   },
   {
@@ -126,16 +126,16 @@ var friendsArray = [
     "species":"hanar",
     "photo":"https://imgur.com/VUOVx2c",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        1,
+        2,
+        1,
+        5,
+        4,
+        4,
+        5,
+        3,
+        1,
+        5
       ]
   },
   {
@@ -143,16 +143,16 @@ var friendsArray = [
     "species":"salarian",
     "photo":"https://imgur.com/CzLmygk",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        2,
+        4,
+        5,
+        1,
+        5,
+        4,
+        3,
+        4,
+        3,
+        2
       ]
   },
   {
@@ -160,16 +160,16 @@ var friendsArray = [
     "species":"elcor",
     "photo":"https://imgur.com/BJz6aL8",
     "scores":[
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        2,
+        3,
+        1,
+        2,
+        5,
+        5,
+        4,
+        3,
+        2,
+        4
       ]
   },
 
