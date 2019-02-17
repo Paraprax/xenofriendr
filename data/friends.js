@@ -20,7 +20,7 @@ var friendsArray = [
       ]
   },
   {
-    "name":"Xendros",
+    "name":"Xendrus",
     "species":"turian",
     "photo":"https://imgur.com/7fBQs4t",
     "scores":[
@@ -71,9 +71,94 @@ var friendsArray = [
       ]
   },
   {
-    "name":"Madas",
+    "name":"Modo",
     "species":"batarian",
     "photo":"https://imgur.com/KccBKwu",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Lond",
+    "species":"volus",
+    "photo":"https://imgur.com/k96bYYE",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Zeri-Yala",
+    "species":"quarian",
+    "photo":"https://imgur.com/ylDMEeT",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Merlas",
+    "species":"hanar",
+    "photo":"https://imgur.com/VUOVx2c",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Phloran",
+    "species":"salarian",
+    "photo":"https://imgur.com/CzLmygk",
+    "scores":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+  },
+  {
+    "name":"Beltrund",
+    "species":"elcor",
+    "photo":"https://imgur.com/BJz6aL8",
     "scores":[
         0,
         0,
@@ -91,4 +176,6 @@ var friendsArray = [
 ]
   
 module.exports = friendsArray; /* module.exports is used here to make the array 
-accessible to other files in the app if they use 'require' on to import it:*/
+accessible to other files in the app if they use 'require' on to import it:*/ 
+
+//album of profile pics is @ https://imgur.com/a/EKx2Ntz
