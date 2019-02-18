@@ -18,31 +18,30 @@ module.exports = function(app) {
         console.log(friendSurveys);
         var sumOfDifferences = 0;
         
+        // ~ ~ ~ ~ THE BIG ALGORITHIM for actually comparing user answers to other profiles and finding the smallest difference: ~ ~ ~ ~ ~ 
+
         for (var i = 0; i < friendSurveys.length; i++) { //for each profile in the friendSurveys array....
 
             if (friendSurveys[i].name != userAnswers.name) { //exclude the user's own profile from the comparison(this would be less fallible if every user had a unique id)
 
-                console.log("bongo banana"); //test
-                console.log(userAnswers.scores[i]);
                 var allDifferences = [];
                 var difference = 0;
 
                 for (var j = 0; j < friendSurveys[i].scores.length; j++){ //for each number in each profile's score....
                     
+                    /* both the functions in this if-statement subtract one answer-number from the other for the 
+                    same question and set the result as 'difference', but to prevent negative-number results, 
+                    we always subtract the smaller number from the larger one: */
                     if (userAnswers.scores[j] > friendSurveys[i].scores[j]) {
-                        difference = (userAnswers.scores[j] - friendSurveys[i].scores[j]); //subtract the profile-number from the user-number for the same question and set the result as a var called 'difference'
-                        console.log(difference + "alpha");
+                        difference = (userAnswers.scores[j] - friendSurveys[i].scores[j]); 
                     }
                     else {
-                        difference = (friendSurveys[i].scores[j] - userAnswers.scores[j]); //subtract the profile-number from the user-number for the same question and set the result as a var called 'difference'
-                        console.log(difference + "beta");
+                        difference = (friendSurveys[i].scores[j] - userAnswers.scores[j]);
                     }
                     
-                    allDifferences.push(difference); //collect all the differences in one array
-                    console.log(allDifferences);
                 }
 
-                console.log(friendSurveys[i].name);
+                allDifferences.push(difference); //collect all the differences in one array
 
                 for (var k = 0; k < allDifferences.length; k++) { //loop through the array of differences and sum them into one number
                     sumOfDifferences += allDifferences[k];
@@ -50,8 +49,8 @@ module.exports = function(app) {
 
                 console.log("You are " + sumOfDifferences + " points different from " + friendSurveys[i].name);
             }
-        }
+        } // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 
-        console.log("compatibility algoritihm coming soon...."); //TODO: finish logic for the compatibility algoritihm
+        //TODO: finish logic for the compatibility algoritihm and return best result!
     });
 }
