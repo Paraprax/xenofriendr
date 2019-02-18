@@ -4,6 +4,10 @@ body {
     font-family: MassEffect123;
 }
 
+.jumbotron {
+    color: black;
+}
+
 .question {
     font-family: futura;
     font-size: 16pt;
