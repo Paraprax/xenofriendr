@@ -105,6 +105,23 @@ var friendsArray = [
       ]
   },
   {
+    "name":"Beltrund",
+    "species":"elcor",
+    "photo":"https://imgur.com/BJz6aL8",
+    "scores":[
+        2, 
+        3, 
+        1, 
+        2, 
+        5, 
+        5, 
+        4, 
+        3, 
+        2, 
+        4  
+      ] //diff of 12 from me
+  },
+  {
     "name":"Zeri-Yala",
     "species":"quarian",
     "photo":"https://imgur.com/ylDMEeT",
@@ -143,39 +160,23 @@ var friendsArray = [
     "species":"salarian",
     "photo":"https://imgur.com/CzLmygk",
     "scores":[
-        2,
-        4,
-        5,
-        1,
-        5,
-        4,
-        3,
-        4,
-        3,
-        2
+        2, 
+        4, 
+        5, 
+        1, 
+        5, 
+        4, 
+        3, 
+        4, 
+        3, 
+        2  
       ]
-  },
-  {
-    "name":"Beltrund",
-    "species":"elcor",
-    "photo":"https://imgur.com/BJz6aL8",
-    "scores":[
-        2,
-        3,
-        1,
-        2,
-        5,
-        5,
-        4,
-        3,
-        2,
-        4
-      ]
-  },
-
+  }
 ]
   
 module.exports = friendsArray; /* module.exports is used here to make the array 
 accessible to other files in the app if they use 'require' on to import it:*/ 
 
 //album of profile pics is @ https://imgur.com/a/EKx2Ntz
+
+
