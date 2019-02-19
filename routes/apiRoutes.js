@@ -53,9 +53,12 @@ module.exports = function(app) {
                 diffsFromEachProfile.push(sumOfDifferences); //collect them all in array, which will be looked at later to find the best match
                 
                 console.log("You are " + sumOfDifferences + " points different from " + friendSurveys[i].name);
-                console.log("Array of differences from each user: " + diffsFromEachProfile);
             }
         } // ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+        console.log("Array of differences from each user: " + diffsFromEachProfile);
+
+        var bestMatch = Math.min(...diffsFromEachProfile); //Math.min returns the lowest number from a set(the '...' spread syntax lets us pass it a predefined array by var; it will not work without it)
 
         //TODO: finish logic for the compatibility algoritihm and return best result!
     });

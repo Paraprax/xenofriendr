@@ -8,7 +8,7 @@ var friendsArray = [
     "photo":"https://imgur.com/SP1wSVw",
     "scores":[
         5,
-        3,
+        4,
         3,
         2,
         2,
