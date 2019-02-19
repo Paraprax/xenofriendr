@@ -59,6 +59,9 @@ module.exports = function(app) {
         console.log("Array of differences from each user: " + diffsFromEachProfile);
 
         var bestMatch = Math.min(...diffsFromEachProfile); //Math.min returns the lowest number from a set(the '...' spread syntax lets us pass it a predefined array by var; it will not work without it)
+        var bestMatchIndexNumber = diffsFromEachProfile.indexOf(bestMatch); //indexOf is used to find the index number of the best match
+
+        console.log(friendSurveys[bestMatchIndexNumber].name + " is your best match on Xenophile!");
 
         //TODO: finish logic for the compatibility algoritihm and return best result!
     });
