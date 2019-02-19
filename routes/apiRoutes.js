@@ -20,20 +20,22 @@ module.exports = function(app) {
         
         // ~ ~ ~ ~ THE BIG ALGORITHIM for actually comparing user answers to other profiles and finding the smallest difference: ~ ~ ~ ~ ~ 
 
-        for (var i = 0; i < friendSurveys.length; i++) { //for each profile in the friendSurveys array....
-
-            if (friendSurveys[i].name != userAnswers.name) { //exclude the user's own profile from the comparison(TODO: this would be less fallible if every user had a unique id)
+         //for each profile in the friendSurveys array:
+        for (var i = 0; i < friendSurveys.length; i++) {
+            
+            //excluding the user's own profile from the comparison:
+            if (friendSurveys[i].name != userAnswers.name) { //(TODO: this exclusion would be less fallible if every user had a unique id..)
 
                 var difference = 0;   
                 var diffsFromCurrent = [];
                 var sumOfDifferences = 0;     
 
-                for (var j = 0; j < friendSurveys[i].scores.length; j++) { //loop through each number in each profile's scores....
+                //loop through each number in each profile's scores:
+                for (var j = 0; j < friendSurveys[i].scores.length; j++) { 
                     
                     /* subtract one answer-number from the other for the same question, and set the result as 'difference'
                     (but to prevent negative-number results, we use an if-else to always subtract the smaller number from 
-                    the larger one!) */
-
+                    the larger one!): */
                     if (userAnswers.scores[j] > friendSurveys[i].scores[j]) {
                         difference = (userAnswers.scores[j] - friendSurveys[i].scores[j]);
                         console.log(difference);
@@ -42,15 +44,17 @@ module.exports = function(app) {
                         difference = (friendSurveys[i].scores[j] - userAnswers.scores[j]);
                         console.log(difference);
                     }
-                    
-                    diffsFromCurrent.push(difference); //collect all the differences from this profile into one array
+                    //collect all the differences from this profile into one array:
+                    diffsFromCurrent.push(difference); 
                 }
 
-                for (var k = 0; k < diffsFromCurrent.length; k++) { //loop through the array of differences
-                    sumOfDifferences += diffsFromCurrent[k]; //sum them into one number
+                //loop through the array of differences and steadily sum them into one big number:
+                for (var k = 0; k < diffsFromCurrent.length; k++) {
+                    sumOfDifferences += diffsFromCurrent[k];
                 }
 
-                diffsFromEachProfile.push(sumOfDifferences); //collect them all in array, which will be looked at later to find the best match
+                //collect every sum in one overall array, which will be looked at later to find the best match:
+                diffsFromEachProfile.push(sumOfDifferences);
                 
                 console.log("You are " + sumOfDifferences + " points different from " + friendSurveys[i].name);
             }
@@ -61,8 +65,8 @@ module.exports = function(app) {
         var bestMatch = Math.min(...diffsFromEachProfile); //Math.min returns the lowest number from a set(the '...' spread syntax lets us pass it a predefined array by var; it will not work without it)
         var bestMatchIndexNumber = diffsFromEachProfile.indexOf(bestMatch); //indexOf is used to find the index number of the best match
 
-        console.log(friendSurveys[bestMatchIndexNumber].name + " is your best match on Xenophile!");
-
-        //TODO: finish logic for the compatibility algoritihm and return best result!
+        //match the index-number of the lowest difference score with the index-number of the corresponding profile in the database to find the user's best match!:
+        var matchingProfile = friendSurveys[bestMatchIndexNumber].name;
+        console.log(matchingProfile + " is your best match on Xenophile!");
     });
 }
