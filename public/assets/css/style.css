@@ -8,6 +8,29 @@ body {
     color: black;
 }
 
+.modal-content {
+    border-width: 3px;
+    border-color: whitesmoke;
+}
+
+.modal-header {
+    background-color: #2222AA;
+}
+
+.modal-title {
+    background-color: #2222AA;
+    color: orangered;
+}
+
+.modal-body {
+    background-color: #202059;
+    color: white;
+}
+
+.modal-footer {
+    background-color: #2222AA;
+}
+
 .question {
     font-family: futura;
     font-size: 16pt;

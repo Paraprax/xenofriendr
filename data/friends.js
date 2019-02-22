@@ -119,7 +119,7 @@ var friendsArray = [
         3, 
         2, 
         4  
-      ] //diff of 12 from me
+      ]
   },
   {
     "name":"Zeri-Yala",

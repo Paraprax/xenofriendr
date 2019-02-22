@@ -15,7 +15,6 @@ app.use(express.json());
 
 //CRUCIAL - include the server-side data from 'public', so the client gets the local custom CSS doc as well 
 app.use(express.static('public'));
-
 //-------
 
 //Routing:

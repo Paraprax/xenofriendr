@@ -8,8 +8,7 @@
 
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>    
 
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -43,6 +42,7 @@
     <h3>Question 1</h3>
     <h4><div class="question">You'd rather be part of the ground team exploring an uncharted planet than monitoring safely from orbit.</div></h4>
     <select class="chosen-select" id="q1">
+      <option selected="selected">4</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -54,6 +54,7 @@
     <h3>Question 2</h3>
     <h4><div class="question">You prefer clean, minimalist decorum without clutter or ostentatious adornments.</div></h4>
     <select class="chosen-select" id="q2">
+      <option selected="selected">3</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -66,6 +67,7 @@
     <h3>Question 3</h3>
     <h4><div class="question">You'd rather be a rogue agent or work with a small crew than be part of a large, rulebound organization.</div></h4>
     <select class="chosen-select" id="q3">
+      <option selected="selected">4</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -78,6 +80,7 @@
     <h3>Question 4</h3>
     <h4><div class="question">You want to settle on one planet to call home for years to come.</div></h4>
     <select class="chosen-select" id="q4">
+      <option selected="selected">2</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -88,8 +91,9 @@
 
 
     <h3>Question 5</h3>
-    <h4><div class="question">You have or enjoy strong sense of space humor.</div></h4>
+    <h4><div class="question">You have or enjoy strong sense of space-humor.</div></h4>
     <select class="chosen-select" id="q5">
+      <option selected="selected">5</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -102,6 +106,7 @@
     <h3>Question 6</h3>
     <h4><div class="question">You'd choose a desk job over one that involves a lot of action or physicality.</div></h4>
     <select class="chosen-select" id="q6">
+      <option selected="selected">3</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -114,6 +119,7 @@
     <h3>Question 7</h3>
     <h4><div class="question">You prefer artistic and spiritual pursuits over science and hard data.</div></h4>
     <select class="chosen-select" id="q7">
+      <option selected="selected">3</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -125,6 +131,7 @@
     <h3>Question 8</h3>
     <h4><div class="question">You hold your own sense of right and wrong in higher regard than any official authority.</div></h4>
     <select class="chosen-select" id="q8">
+      <option selected="selected">4</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -136,6 +143,7 @@
     <h3>Question 9</h3>
     <h4><div class="question">You're tempted by the idea of abandoning Council Space for a life of lawless piracy or opportunism in the Terminus Systems.</div></h4>
     <select class="chosen-select" id="q9">
+      <option selected="selected">1</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -147,6 +155,7 @@
     <h3>Question 10</h3>
     <h4><div class="question">You believe it's in every species' best interest to work together in achieving a strong, diverse galactic community.</div></h4>
     <select class="chosen-select" id="q10">
+      <option selected="selected">5</option> <!--paraprax default-->
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
@@ -183,7 +192,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <!--<img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">-->
+          <img id="match-img" alt="Your match's profile picture">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -261,13 +270,16 @@
 
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function(data) {
-
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+            console.log(data.name);
+            console.log(data.photo);
 
-          // Show the modal with the best match
-          $("#results-modal").modal("toggle");
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+            //TODO: generate paragraph based on answers
 
         });
       } else {
@@ -275,6 +287,9 @@
       }
     });
   </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 
