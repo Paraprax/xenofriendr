@@ -71,34 +71,25 @@ module.exports = function(app) {
 
         function blurbGenerator(profile) {
 
-            var q1answer = "";
-            var q2answer = "";
-            var q3answer = "";
-            var q4answer = "";
-            var q5answer = "";
-            var q6answer = "";
-            var q7answer = "";
-            var q8answer = "";
-            var q9answer = "";
-            var q10answer = "";
+            var answersArray = ["","","","","","","","","",""]; //array of ten empty strings to be set by loop
 
             switch (profile.scores[0]) { //evaluate their answer to survey question #1
                 case 1 || 2: 
-                    q1answer = matchDescription[0].low 
+                    answersArray[0] = matchDescription[0].low
                     break;
                 case 3: 
-                    q1answer = matchDescription[0].neutral
+                    answersArray[0] = matchDescription[0].neutral
                     break;
                 case 4 || 5: 
-                    q1answer = matchDescription[0].high
+                    answersArray[0] = matchDescription[0].high
                     break;
             }
 
             var blurb = 
-            `${q1answer}, ${profile.name} 
-            ${q6answer}. ${q7answer}, and tend to ${q2answer}.
-            ${profile.name} ${q5answer}, and ${q3answer}. They ${q8answer},
-            and ${q9answer}. ${profile.name} is ${q4answer}, and ${q10answer}`;
+            `${answersArray[0]}, ${profile.name} 
+            ${answersArray[5]}. ${answersArray[6]}, and tend to ${answersArray[1]}.
+            ${profile.name} ${answersArray[4]}, and ${answersArray[2]}. They ${answersArray[7]},
+            and ${answersArray[8]}. ${profile.name} is ${answersArray[3]}, and ${answersArray[9]}`;
 
             return blurb;
         }
