@@ -68,7 +68,14 @@ module.exports = function(app) {
 
         //match the index-number of the lowest difference-score with the index-number of the corresponding profile in the database to find the user's best match!:
         var matchingProfile = friendSurveys[bestMatchIndexNumber];
-        var matchBlurb = "garbanzo!";
+
+        function blurbGenerator(profile) {
+            var blurb = "";
+
+            return blurb;
+        }
+
+        var matchBlurb = blurbGenerator(matchingProfile);
 
         var returnData = [matchingProfile, matchBlurb]
         

@@ -8,6 +8,10 @@ body {
     color: black;
 }
 
+#match-blurb {
+    font-family: futura;
+}
+
 .modal-content {
     border-width: 3px;
     border-color: whitesmoke;
