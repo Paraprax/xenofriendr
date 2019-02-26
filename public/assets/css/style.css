@@ -1,15 +1,32 @@
 body {
     background-color: #222255;
-    color: #DDDDDD;
+    background-image: url('/assets/images/galaxymap.png');
+    color: rgb(169, 169, 169);
     font-family: MassEffect123;
 }
 
+.container {
+    background-color: rgb(41, 71, 101, 0.5);
+}
+
+.form-control {
+    background-color: black; 
+    color:  rgb(255, 77, 0);
+}
+
 .jumbotron {
+    background-color: rgb(41, 71, 101);
     color: black;
 }
 
+.links-container {
+    background-color: rgba(255, 0, 0, 0);
+}
+
 #match-blurb {
-    font-family: futura;
+    color: lightgray;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .modal-content {
@@ -23,7 +40,7 @@ body {
 
 .modal-title {
     background-color: #2222AA;
-    color: orangered;
+    color:  rgb(255, 77, 0);
 }
 
 .modal-body {
@@ -33,6 +50,10 @@ body {
 
 .modal-footer {
     background-color: #2222AA;
+}
+
+.links {
+    color: rgb(255, 77, 0);
 }
 
 .question {
