@@ -73,21 +73,29 @@ module.exports = function(app) {
 
             var answersArray = ["","","","","","","","","",""]; //array of ten empty strings to be set by loop
 
-            switch (profile.scores[0]) { //evaluate their answer to survey question #1
-                case 1 || 2: 
-                    answersArray[0] = matchDescription[0].low
-                    break;
-                case 3: 
-                    answersArray[0] = matchDescription[0].neutral
-                    break;
-                case 4 || 5: 
-                    answersArray[0] = matchDescription[0].high
-                    break;
+            for (var i = 0; i < answersArray.length; i++) {
+                switch (profile.scores[i]) { //evaluate their answer to survey question #1
+                    case 1: 
+                        answersArray[i] = matchDescription[i].low
+                        break;
+                    case 2: 
+                        answersArray[i] = matchDescription[i].low
+                        break;
+                    case 3: 
+                        answersArray[i] = matchDescription[i].neutral
+                        break;
+                    case 4: 
+                        answersArray[i] = matchDescription[i].high
+                        break;
+                    case 5: 
+                        answersArray[i] = matchDescription[i].high
+                        break;
+                }
             }
 
             var blurb = 
             `${answersArray[0]}, ${profile.name} 
-            ${answersArray[5]}. ${answersArray[6]}, and tend to ${answersArray[1]}.
+            ${answersArray[5]}. They ${answersArray[6]}, and tend to ${answersArray[1]}.
             ${profile.name} ${answersArray[4]}, and ${answersArray[2]}. They ${answersArray[7]},
             and ${answersArray[8]}. ${profile.name} is ${answersArray[3]}, and ${answersArray[9]}`;
 
