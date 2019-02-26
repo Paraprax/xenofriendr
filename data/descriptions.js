@@ -66,3 +66,4 @@ var descriptionsArray = [
     
 ]
 
+module.exports = descriptionsArray;

@@ -196,6 +196,7 @@
         <div class="modal-body">
           <h2 id="match-name"></h2>
           <img id="match-img" alt="Your match's profile picture">
+          <p id="match-blurb"></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -274,11 +275,13 @@
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function(data) {
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            console.log(data.name);
-            console.log(data.photo);
+            console.log(data[0].name);
+            console.log(data[0].photo);
+            console.log(data[1]);
 
-            $("#match-name").text(data.name);
-            $("#match-img").attr("src", data.photo);
+            $("#match-name").text(data[0].name);
+            $("#match-img").attr("src", data[0].photo);
+            $("#match-blurb").text(data[1]);
 
             // Show the modal with the best match
             $("#results-modal").modal("toggle");

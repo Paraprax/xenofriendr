@@ -2,7 +2,7 @@
 && POST-ing new user survey data to the database */
 
 var friendSurveys = require("../data/friends.js");
-var matchDescription = require("../data/description.js");
+var matchDescription = require("../data/descriptions.js");
 
 module.exports = function(app) {
 
@@ -68,10 +68,15 @@ module.exports = function(app) {
 
         //match the index-number of the lowest difference-score with the index-number of the corresponding profile in the database to find the user's best match!:
         var matchingProfile = friendSurveys[bestMatchIndexNumber];
+        var matchBlurb = "garbanzo!";
+
+        var returnData = [matchingProfile, matchBlurb]
         
         var matchingProfileName = friendSurveys[bestMatchIndexNumber].name;
         console.log(matchingProfileName + " is your best match on Xenophile!");
-
-        return res.json(matchingProfile); //set matchingProfile as the response from this function, so it will be returned accessibly by POST requests to this route
+        
+        return res.json(returnData); //set matchingProfile as the response from this function, so it will be returned accessibly by POST requests to this route
     });
 }
+
+//TODO: loop through the friends array and build a description paragraph for everybody in it, based on their answers
