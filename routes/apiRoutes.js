@@ -69,48 +69,46 @@ module.exports = function(app) {
         //match the index-number of the lowest difference-score with the index-number of the corresponding profile in the database to find the user's best match!:
         var matchingProfile = friendSurveys[bestMatchIndexNumber];
 
-        function blurbGenerator(profile) {
+        function blurbGenerator(profile) { //a function that can be passed a profile and assemble a blurb of descriptive text about them based on their survey answers
 
-            var answersArray = ["","","","","","","","","",""]; //array of ten empty strings to be set by loop
+            var descriptorArray = ["","","","","","","","","",""]; //array of ten empty strings to be set by loop
 
-            for (var i = 0; i < answersArray.length; i++) {
-                switch (profile.scores[i]) { //evaluate their answer to survey question #1
+            for (var i = 0; i < descriptorArray.length; i++) {
+                switch (profile.scores[i]) { //look at their answer to each survey question
                     case 1: 
-                        answersArray[i] = matchDescription[i].low
+                        descriptorArray[i] = matchDescription[i].low //set each string in the array to a 'low' description(from the descriptions.js file) if they answered 1 or 2..
                         break;
                     case 2: 
-                        answersArray[i] = matchDescription[i].low
+                        descriptorArray[i] = matchDescription[i].low
                         break;
                     case 3: 
-                        answersArray[i] = matchDescription[i].neutral
+                        descriptorArray[i] = matchDescription[i].neutral //'neutral' for 3's..
                         break;
                     case 4: 
-                        answersArray[i] = matchDescription[i].high
+                        descriptorArray[i] = matchDescription[i].high //or 'high' for 4's and 5's
                         break;
                     case 5: 
-                        answersArray[i] = matchDescription[i].high
+                        descriptorArray[i] = matchDescription[i].high
                         break;
                 }
             }
 
-            var blurb = 
-            `${answersArray[0]}, ${profile.name} 
-            ${answersArray[5]}. They ${answersArray[6]}, and tend to ${answersArray[1]}.
-            ${profile.name} ${answersArray[4]}, and ${answersArray[2]}. They ${answersArray[7]},
-            and ${answersArray[8]}. ${profile.name} is ${answersArray[3]}, and ${answersArray[9]}`;
+            var blurb = //a blurb about the profile is built out of sentences assigned to vars by the switchcase statement above, with the cracks filled in by a few hardcoded words:
+            `${descriptorArray[0]}, ${profile.name} 
+            ${descriptorArray[5]}. They ${descriptorArray[6]}, and tend to ${descriptorArray[1]}.
+            ${profile.name} ${descriptorArray[4]}, and ${descriptorArray[2]}. They ${descriptorArray[7]},
+            and ${descriptorArray[8]}. ${profile.name} is ${descriptorArray[3]}, and ${descriptorArray[9]}`;
 
             return blurb;
         }
 
-        var matchBlurb = blurbGenerator(matchingProfile);
+        var matchBlurb = blurbGenerator(matchingProfile); //calls the blurbGenerator function, passes it the matchingProfile var, and sets the returned blurb to a new var
 
-        var returnData = [matchingProfile, matchBlurb]
+        var returnData = [matchingProfile, matchBlurb] //puts these two pieces of relevant data into a single array var, so it can be returned by res.json() below
         
-        var matchingProfileName = friendSurveys[bestMatchIndexNumber].name;
+        var matchingProfileName = friendSurveys[bestMatchIndexNumber].name; //server-side console log stuff for testing
         console.log(matchingProfileName + " is your best match on Xenophile!");
         
-        return res.json(returnData); //set matchingProfile as the response from this function, so it will be returned accessibly by POST requests to this route
+        return res.json(returnData); //sets the data to be returned by POST requests to this route
     });
 }
-
-//TODO: loop through the friends array and build a description paragraph for everybody in it, based on their answers
