@@ -5,7 +5,7 @@ var friendsArray = [
     {
     "name":"Nylana",
     "species":"asari",
-    "photo":"https://imgur.com/SP1wSVw",
+    "photo":"https://i.imgur.com/SP1wSVw.png",
     "scores":[
         5,
         4,
@@ -22,7 +22,7 @@ var friendsArray = [
   {
     "name":"Xendrus",
     "species":"turian",
-    "photo":"https://imgur.com/7fBQs4t",
+    "photo":"https://i.imgur.com/7fBQs4t.jpg", 
     "scores":[
         4,
         4,
@@ -39,7 +39,7 @@ var friendsArray = [
   {
     "name":"Grudge",
     "species":"krogan",
-    "photo":"https://imgur.com/bCrHKmx",
+    "photo":"https://i.imgur.com/bCrHKmx.jpg",
     "scores":[
         5,
         1,
@@ -56,7 +56,7 @@ var friendsArray = [
   {
     "name":"Jenkins",
     "species":"human",
-    "photo":"https://imgur.com/MMs2i6s",
+    "photo":"https://i.imgur.com/MMs2i6s.png",
     "scores":[
         5,
         4,
@@ -73,7 +73,7 @@ var friendsArray = [
   {
     "name":"Modo",
     "species":"batarian",
-    "photo":"https://imgur.com/KccBKwu",
+    "photo":"https://i.imgur.com/KccBKwu.jpg",
     "scores":[
         3,
         3,
@@ -90,7 +90,7 @@ var friendsArray = [
   {
     "name":"Lond",
     "species":"volus",
-    "photo":"https://imgur.com/k96bYYE",
+    "photo":"https://i.imgur.com/k96bYYE.png",
     "scores":[
         2,
         3,
@@ -107,7 +107,7 @@ var friendsArray = [
   {
     "name":"Beltrund",
     "species":"elcor",
-    "photo":"https://imgur.com/BJz6aL8",
+    "photo":"https://i.imgur.com/BJz6aL8.jpg",
     "scores":[
         2, 
         3, 
@@ -124,7 +124,7 @@ var friendsArray = [
   {
     "name":"Zeri-Yala",
     "species":"quarian",
-    "photo":"https://imgur.com/ylDMEeT",
+    "photo":"https://i.imgur.com/ylDMEeT.jpg",
     "scores":[
         4,
         1,
@@ -141,7 +141,7 @@ var friendsArray = [
   {
     "name":"Merlas",
     "species":"hanar",
-    "photo":"https://imgur.com/VUOVx2c",
+    "photo":"https://i.imgur.com/VUOVx2c.jpg",
     "scores":[
         1,
         2,
@@ -158,7 +158,7 @@ var friendsArray = [
   {
     "name":"Phloran",
     "species":"salarian",
-    "photo":"https://imgur.com/CzLmygk",
+    "photo":"https://i.imgur.com/CzLmygk.jpg",
     "scores":[
         2, 
         4, 

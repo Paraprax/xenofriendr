@@ -97,7 +97,7 @@ module.exports = function(app) {
             `${descriptorArray[0]}, ${profile.name} 
             ${descriptorArray[5]}. They ${descriptorArray[6]}, and tend to ${descriptorArray[1]}.
             ${profile.name} ${descriptorArray[4]}, and ${descriptorArray[2]}. They ${descriptorArray[7]},
-            and ${descriptorArray[8]}. ${profile.name} is ${descriptorArray[3]}, and ${descriptorArray[9]}`;
+            and ${descriptorArray[8]}. ${profile.name} ${descriptorArray[3]}, and ${descriptorArray[9]}.`;
 
             return blurb;
         }

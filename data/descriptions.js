@@ -5,7 +5,7 @@ var descriptionsArray = [
     
     { //You'd rather be part of the ground team exploring an uncharted planet than monitoring safely from orbit.X
         questionNumber: "1",
-        low: "More comfortable pulling strings from behind the scenes than being out in the fray, ",
+        low: "More comfortable pulling strings from behind the scenes than being out in the fray",
         neutral: "Equally comfortable behind the scenes or out in the field",
         high: "More comfortable out getting their hands dirty than riding in the backseat"
     },
@@ -55,13 +55,13 @@ var descriptionsArray = [
         questionNumber: "9",
         low: "find life within civilized space to be as good as it gets, enjoying the safety and co-opertism of the Council's rule",
         neutral: "enjoy the civilized regions of space, but sometimes imagines living life on the edge as a rugged adventurer in the lawless Terminus Systems",
-        high: "often think of leaving Council Space behind to set out for an outlaw's life in the Terminus Systems, with nobody to answer to but themselves, and no laws to protect or hinder them."
+        high: "often think of leaving Council Space behind to set out for an outlaw's life in the Terminus Systems, with nobody to answer to but themselves, and no laws to protect or hinder them"
     },
     { //You believe it's in every species' best interest to work together in achieving a strong, diverse galactic community.
         questionNumber: "10",
-        low: "believes it's up to every species to act in their own self-interests and preserve their individual civilzations, rejecting reliance on a greater galactic community that could fall prey to cultural divisions and war.",
-        neutral: "accepts the overall value of a diverse and cooperative galactic community, though is hesitant to fully accept the idea of 'one happy family' as opposed to distinct civilizations in a mutually beneficial relationship.",
-        high: "is eager to embrace the idea of a galactic civilization greater than the sum of its different species, seeing us all as children of the Universe, forging a brighter future together as one."
+        low: "believes it's up to every species to act in their own self-interests and preserve their individual civilzations, rejecting reliance on a greater galactic community that could fall prey to cultural divisions and war",
+        neutral: "accepts the overall value of a diverse and cooperative galactic community, though is hesitant to fully accept the idea of 'one happy family' as opposed to distinct civilizations in a mutually beneficial relationship",
+        high: "is eager to embrace the idea of a galactic civilization greater than the sum of its different species, seeing us all as children of the Universe, forging a brighter future together as one"
     },
     
 ]

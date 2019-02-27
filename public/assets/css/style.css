@@ -16,7 +16,7 @@ body {
 
 .jumbotron {
     background-color: rgb(41, 71, 101);
-    color: black;
+    color: lightgray;
 }
 
 .links-container {
@@ -59,4 +59,9 @@ body {
 .question {
     font-family: futura;
     font-size: 16pt;
+}
+
+.survey-btn {
+    background-color: rgb(255, 77, 0);
+    color: lightgray;
 }
