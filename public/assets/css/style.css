@@ -1,8 +1,13 @@
+@font-face {
+    font-family: mass-effect-font;
+    src: url('../.fonts/me123.ttf');
+  }
+
 body {
     background-color: #222255;
     background-image: url('/assets/images/galaxymap.png');
     color: rgb(169, 169, 169);
-    font-family: MassEffect123;
+    font-family: mass-effect-font;
 }
 
 .container {
