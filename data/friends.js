@@ -5,6 +5,7 @@ var friendsArray = [
     {
     "name":"Nylana",
     "species":"asari",
+    "gender":"female",
     "photo":"https://i.imgur.com/SP1wSVw.png",
     "scores":[
         5,
@@ -22,6 +23,7 @@ var friendsArray = [
   {
     "name":"Xendrus",
     "species":"turian",
+    "gender":"male",
     "photo":"https://i.imgur.com/7fBQs4t.jpg", 
     "scores":[
         4,
@@ -39,6 +41,7 @@ var friendsArray = [
   {
     "name":"Grudge",
     "species":"krogan",
+    "gender":"male",
     "photo":"https://i.imgur.com/bCrHKmx.jpg",
     "scores":[
         5,
@@ -56,6 +59,7 @@ var friendsArray = [
   {
     "name":"Jenkins",
     "species":"human",
+    "gender":"male",
     "photo":"https://i.imgur.com/MMs2i6s.png",
     "scores":[
         5,
@@ -73,6 +77,7 @@ var friendsArray = [
   {
     "name":"Modo",
     "species":"batarian",
+    "gender":"male",
     "photo":"https://i.imgur.com/KccBKwu.jpg",
     "scores":[
         3,
@@ -90,6 +95,7 @@ var friendsArray = [
   {
     "name":"Lond",
     "species":"volus",
+    "gender":"male",
     "photo":"https://i.imgur.com/k96bYYE.png",
     "scores":[
         2,
@@ -107,6 +113,7 @@ var friendsArray = [
   {
     "name":"Beltrund",
     "species":"elcor",
+    "gender":"male",
     "photo":"https://i.imgur.com/BJz6aL8.jpg",
     "scores":[
         2, 
@@ -124,6 +131,7 @@ var friendsArray = [
   {
     "name":"Zeri-Yala",
     "species":"quarian",
+    "gender":"female",
     "photo":"https://i.imgur.com/ylDMEeT.jpg",
     "scores":[
         4,
@@ -141,6 +149,7 @@ var friendsArray = [
   {
     "name":"Merlas",
     "species":"hanar",
+    "gender":"male",
     "photo":"https://i.imgur.com/VUOVx2c.jpg",
     "scores":[
         1,
@@ -158,6 +167,7 @@ var friendsArray = [
   {
     "name":"Phloran",
     "species":"salarian",
+    "gender":"male",
     "photo":"https://i.imgur.com/CzLmygk.jpg",
     "scores":[
         2, 
@@ -171,9 +181,45 @@ var friendsArray = [
         3, 
         2  
       ]
+  },
+  {
+    "name":"Robynson",
+    "species":"human",
+    "gender":"female",
+    "photo":"https://i.imgur.com/N87Dmal.jpg",
+    "scores":[
+        5, 
+        1, 
+        3, 
+        4, 
+        4, 
+        1, 
+        4, 
+        5, 
+        2, 
+        5  
+      ]
+  },
+  {
+    "name":"Venrim",
+    "species":"volus",
+    "gender":"female",
+    "photo":"https://i.imgur.com/7w0CWyB.png",
+    "scores":[
+        1, 
+        4, 
+        1, 
+        5, 
+        3, 
+        5, 
+        2, 
+        2, 
+        1, 
+        4  
+      ]
   }
 ]
-  
+
 module.exports = friendsArray; /* module.exports is used here to make the array 
 accessible to other files in the app if they use 'require' on to import it:*/ 
 
