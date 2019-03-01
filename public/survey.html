@@ -185,6 +185,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
+          <h5 id="match-species"></h5><h5 id="match-gender"></h5>
           <img id="match-img" alt="Your match's profile picture">
           <p id="match-blurb"></p>
         </div>
@@ -270,6 +271,8 @@
             console.log(data[1]);
 
             $("#match-name").text(data[0].name);
+            $("#match-species").text(data[0].species);
+            $("#match-gender").text(data[0].gender);
             $("#match-img").attr("src", data[0].photo);
             $("#match-blurb").text(data[1]);
 

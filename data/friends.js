@@ -4,8 +4,8 @@ the first six objects are prewritten examples*/
 var friendsArray = [
     {
     "name":"Nylana",
-    "species":"asari",
-    "gender":"female",
+    "species":"a s a r i    ",
+    "gender":"f e m a l e",
     "photo":"https://i.imgur.com/SP1wSVw.png",
     "scores":[
         5,
@@ -22,8 +22,8 @@ var friendsArray = [
   },
   {
     "name":"Xendrus",
-    "species":"turian",
-    "gender":"male",
+    "species":"t u r i a n    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/7fBQs4t.jpg", 
     "scores":[
         4,
@@ -40,8 +40,8 @@ var friendsArray = [
   },
   {
     "name":"Grudge",
-    "species":"krogan",
-    "gender":"male",
+    "species":"k r o g a n    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/bCrHKmx.jpg",
     "scores":[
         5,
@@ -58,8 +58,8 @@ var friendsArray = [
   },
   {
     "name":"Jenkins",
-    "species":"human",
-    "gender":"male",
+    "species":"h u m a n    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/MMs2i6s.png",
     "scores":[
         5,
@@ -76,8 +76,8 @@ var friendsArray = [
   },
   {
     "name":"Modo",
-    "species":"batarian",
-    "gender":"male",
+    "species":"b a t a r i a n    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/KccBKwu.jpg",
     "scores":[
         3,
@@ -94,8 +94,8 @@ var friendsArray = [
   },
   {
     "name":"Lond",
-    "species":"volus",
-    "gender":"male",
+    "species":"v o l u s    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/k96bYYE.png",
     "scores":[
         2,
@@ -112,8 +112,8 @@ var friendsArray = [
   },
   {
     "name":"Beltrund",
-    "species":"elcor",
-    "gender":"male",
+    "species":"e l c o r    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/BJz6aL8.jpg",
     "scores":[
         2, 
@@ -130,8 +130,8 @@ var friendsArray = [
   },
   {
     "name":"Zeri-Yala",
-    "species":"quarian",
-    "gender":"female",
+    "species":"q u a r i a n    ",
+    "gender":"f e m a l e",
     "photo":"https://i.imgur.com/ylDMEeT.jpg",
     "scores":[
         4,
@@ -148,8 +148,8 @@ var friendsArray = [
   },
   {
     "name":"Merlas",
-    "species":"hanar",
-    "gender":"male",
+    "species":"h a n a r    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/VUOVx2c.jpg",
     "scores":[
         1,
@@ -166,8 +166,8 @@ var friendsArray = [
   },
   {
     "name":"Phloran",
-    "species":"salarian",
-    "gender":"male",
+    "species":"s a l a r i a n    ",
+    "gender":"m a l e",
     "photo":"https://i.imgur.com/CzLmygk.jpg",
     "scores":[
         2, 
@@ -184,8 +184,8 @@ var friendsArray = [
   },
   {
     "name":"Robynson",
-    "species":"human",
-    "gender":"female",
+    "species":"h u m a n    ",
+    "gender":"f e m a l e",
     "photo":"https://i.imgur.com/N87Dmal.jpg",
     "scores":[
         5, 
@@ -202,8 +202,8 @@ var friendsArray = [
   },
   {
     "name":"Venrim",
-    "species":"volus",
-    "gender":"female",
+    "species":"v o l u s    ",
+    "gender":"f e m a l e",
     "photo":"https://i.imgur.com/7w0CWyB.png",
     "scores":[
         1, 
