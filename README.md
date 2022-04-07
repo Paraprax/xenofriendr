@@ -1,4 +1,4 @@
-# xenophile
+# xenofriender
 
 A full-stack "Friend Finder" express.js app, set in the world of the *Mass Effect* videogame franchise to spice things up.
 
