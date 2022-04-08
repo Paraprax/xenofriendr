@@ -1,271 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey - Xenophile</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey - XenoFriendr</title>
 
     <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
 
     <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
 
     <!-- Chosen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
     <!-- Custom CSS file-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
     <!-- Favicon -->
-    <link rel='shortcut icon' type='image/x-icon' href='./assets/images/favicon.ico' />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  </head>
 
-</head>
+  <body>
+    <div class="container">
+      <h2>Survey Questions</h2>
+      <hr />
 
-<body>
+      <h3><strong>About You</strong></h3>
+      <h4 class="question">Name (Required)</h4>
+      <input type="text" id="name" class="form-control" required />
 
-  <div class="container">
+      <h4 class="question">Link to Photo Image (Required)</h4>
+      <input type="text" id="photo" class="form-control" required />
 
-    <h2>Survey Questions</h2>
-    <hr>
+      <hr />
 
-    <h3><strong>About You</strong></h3>
-    <h4 class="question">Name (Required)</h4>
-    <input type="text" id="name" class="form-control" required>
+      <!-- survey questions and answer options -->
+      <h3>Question 1</h3>
+      <h4><div class="question">You'd rather be part of the ground team exploring an uncharted planet than monitoring safely from orbit.</div></h4>
+      <select class="chosen-select" id="q1">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <h4 class="question">Link to Photo Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required>
+      <h3>Question 2</h3>
+      <h4><div class="question">You prefer clean, minimalist decorum without clutter or ostentatious adornments.</div></h4>
+      <select class="chosen-select" id="q2">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <hr>
+      <h3>Question 3</h3>
+      <h4><div class="question">You'd rather be a rogue agent or work with a small crew than be part of a large, rulebound organization.</div></h4>
+      <select class="chosen-select" id="q3">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <!-- survey questions and answer options -->
-    <h3>Question 1</h3>
-    <h4><div class="question">You'd rather be part of the ground team exploring an uncharted planet than monitoring safely from orbit.</div></h4>
-    <select class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <h3>Question 4</h3>
+      <h4><div class="question">You want to settle on one planet to call home for years to come.</div></h4>
+      <select class="chosen-select" id="q4">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <h3>Question 2</h3>
-    <h4><div class="question">You prefer clean, minimalist decorum without clutter or ostentatious adornments.</div></h4>
-    <select class="chosen-select" id="q2">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <h3>Question 5</h3>
+      <h4><div class="question">You have or enjoy strong sense of astro-humor.</div></h4>
+      <select class="chosen-select" id="q5">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
+      <h3>Question 6</h3>
+      <h4><div class="question">You'd choose a desk job over one that involves a lot of action or physicality.</div></h4>
+      <select class="chosen-select" id="q6">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <h3>Question 3</h3>
-    <h4><div class="question">You'd rather be a rogue agent or work with a small crew than be part of a large, rulebound organization.</div></h4>
-    <select class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <h3>Question 7</h3>
+      <h4><div class="question">You prefer artistic and imaginative pursuits over science and hard data.</div></h4>
+      <select class="chosen-select" id="q7">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
+      <h3>Question 8</h3>
+      <h4><div class="question">You hold your own sense of right and wrong in higher regard than any official authority.</div></h4>
+      <select class="chosen-select" id="q8">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <h3>Question 4</h3>
-    <h4><div class="question">You want to settle on one planet to call home for years to come.</div></h4>
-    <select class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <h3>Question 9</h3>
+      <h4><div class="question">You're tempted by the idea of abandoning Council Space for a life of lawless piracy or opportunism in the Terminus Systems.</div></h4>
+      <select class="chosen-select" id="q9">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
+      <h3>Question 10</h3>
+      <h4><div class="question">You believe it's in every species' best interest to work together in achieving a strong, diverse galactic community.</div></h4>
+      <select class="chosen-select" id="q10">
+        <option value=""></option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
 
-    <h3>Question 5</h3>
-    <h4><div class="question">You have or enjoy strong sense of astro-humor.</div></h4>
-    <select class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+      <br />
+      <br />
 
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
 
-    <h3>Question 6</h3>
-    <h4><div class="question">You'd choose a desk job over one that involves a lot of action or physicality.</div></h4>
-    <select class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>Question 7</h3>
-    <h4><div class="question">You prefer artistic and imaginative pursuits over science and hard data.</div></h4>
-    <select class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>Question 8</h3>
-    <h4><div class="question">You hold your own sense of right and wrong in higher regard than any official authority.</div></h4>
-    <select class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>Question 9</h3>
-    <h4><div class="question">You're tempted by the idea of abandoning Council Space for a life of lawless piracy or opportunism in the Terminus Systems.</div></h4>
-    <select class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>Question 10</h3>
-    <h4><div class="question">You believe it's in every species' best interest to work together in achieving a strong, diverse galactic community.</div></h4>
-    <select class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <br>
-    <br>
-
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
-
-    <hr>
-    <footer class="footer">
-      <div class="container links-container">
-        <p><a href="/api/friends" class="links">API Friends List</a> | <a href="https://github.com/Paraprax/xenophile" class="links">GitHub Repo</a></p>
-      </div>
-    </footer>
-
-  </div>
-
-  <!-- Modal -->
-  <div id="results-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h2 class="modal-title"><strong>A Match Made In Space!</strong></h2>
+      <hr />
+      <footer class="footer">
+        <div class="container links-container">
+          <p><a href="/api/friends" class="links">API Friends List</a> | <a href="https://github.com/Paraprax/xenofriendr" class="links">GitHub Repo</a></p>
         </div>
-        <div class="modal-body">
-          <h2 id="match-name"></h2>
-          <h5 id="match-species"></h5><h5 id="match-gender"></h5>
-          <img id="match-img" alt="Your match's profile picture">
-          <p id="match-blurb"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
+      </footer>
     </div>
-  </div>
 
-  <script type="text/javascript">
-    // Chosen CSS
-    var config = {
-      ".chosen-select": {},
-      ".chosen-select-deselect": {
-        allow_single_deselect: true
-      },
-      ".chosen-select-no-single": {
-        disable_search_threshold: 10
-      },
-      ".chosen-select-no-results": {
-        no_results_text: "Oops, nothing found!"
-      },
-      ".chosen-select-width": {
-        width: "95%"
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>A Match Made In Space!</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <h5 id="match-species"></h5>
+            <h5 id="match-gender"></h5>
+            <img id="match-img" alt="Your match's profile picture" />
+            <p id="match-blurb"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // Chosen CSS
+      var config = {
+        ".chosen-select": {},
+        ".chosen-select-deselect": {
+          allow_single_deselect: true,
+        },
+        ".chosen-select-no-single": {
+          disable_search_threshold: 10,
+        },
+        ".chosen-select-no-results": {
+          no_results_text: "Oops, nothing found!",
+        },
+        ".chosen-select-width": {
+          width: "95%",
+        },
+      };
+
+      for (var selector in config) {
+        $(selector).chosen(config[selector]);
       }
-    };
 
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
+      // Capture the form inputs
+      $("#submit").on("click", function (event) {
+        event.preventDefault();
 
-    // Capture the form inputs
-    $("#submit").on("click", function(event) {
-      event.preventDefault();
+        // Form validation
+        function validateForm() {
+          var isValid = true;
+          $(".form-control").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
 
-      // Form validation
-      function validateForm() {
-        var isValid = true;
-        $(".form-control").each(function() {
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
+          $(".chosen-select").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
 
-        $(".chosen-select").each(function() {
+        // If all required fields are filled
+        if (validateForm()) {
+          // Create an object for the user"s data
+          var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()],
+          };
 
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        return isValid;
-      }
+          console.log(userData);
 
-      // If all required fields are filled
-      if (validateForm()) {
-        // Create an object for the user"s data
-        var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
-          ]
-        };
-
-        console.log(userData);
-
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function(data) {
-          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          // AJAX post the data to the friends API.
+          $.post("/api/friends", userData, function (data) {
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
             console.log(data[0].name);
             console.log(data[0].photo);
             console.log(data[1]);
@@ -279,17 +256,14 @@
             // Show the modal with the best match
             $("#results-modal").modal("toggle");
             //TODO: generate paragraph based on answers
+          });
+        } else {
+          alert("Please fill out all fields before submitting!");
+        }
+      });
+    </script>
 
-        });
-      } else {
-        alert("Please fill out all fields before submitting!");
-      }
-    });
-  </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
 </html>
