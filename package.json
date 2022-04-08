@@ -1,5 +1,5 @@
 {
-  "name": "xenophile",
+  "name": "xenofriendr",
   "version": "1.0.0",
   "description": "a fullstack friend-finder app",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Paraprax/xenophile.git"
+    "url": "git+https://github.com/Paraprax/xenofriendr.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Paraprax/xenophile/issues"
+    "url": "https://github.com/Paraprax/xenofriendr/issues"
   },
-  "homepage": "https://github.com/Paraprax/xenophile#readme",
+  "homepage": "https://github.com/Paraprax/xenofriendr#readme",
   "dependencies": {
     "express": "^4.16.4"
   }
